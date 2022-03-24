@@ -1,15 +1,16 @@
 //jshint esversion:9
 
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+/* import { useParams } from 'react-router-dom'; */
+/* import { useState, useEffect } from 'react'; */
 
 export const CountryDetails = ({countries}) => {
-    const [country, setCountry] = useState(null);
+    
+    /* const [country, setCountry] = useState(null); */
 
-    const{countryId} = useParams();
-
-    useEffect(() => {
+    /* const{countryId} = useParams();
+ */
+    /* useEffect(() => {
 
         let foundCountry = countries.find(oneCountry => oneCountry.id === countryId);
 
@@ -17,7 +18,7 @@ export const CountryDetails = ({countries}) => {
             setCountry(foundCountry);
         }
 
-    }, [countryId]);
+    }, [countryId, countries]); */
 
   return (
     <div>CountryDetails</div>
