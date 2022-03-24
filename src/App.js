@@ -17,7 +17,6 @@ function App() {
     (async () => {
       let response = await axios.get("https://ih-countries-api.herokuapp.com/countries");
       setCountriesData(response.data);
-      console.log(response.data[0]);
     })();
 
   }, []);
@@ -34,7 +33,7 @@ function App() {
           <CountriesList countries={countriesData} />
 
           <Routes>
-            <Route path="/:id" element={<CountryDetails />} />
+            <Route path="/:countryId" element={<CountryDetails />} />
           </Routes>
 
         </div>
